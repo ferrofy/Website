@@ -96,7 +96,7 @@ const subjects = [
         title: "AI",
         description: "Machine Is Like You? How? Lets Explore",
         icon: "🤖",
-        link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/CSE/"
+        link: "https://ferrofy.github.io/Website/Study/CSE/AI"
     },
     {
         title: "FCS",
