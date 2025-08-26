@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ? "../../Images/Logo_Dark.png" : "../../Images/Logo_Yellow.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ? "../../Images/Logo_Dark.png" : "../../Images/Logo_Yellow.png";
         updateThemeColor(isDark);
     });
 });
@@ -93,51 +93,33 @@ window.addEventListener("load", () => {
 
 const subjects = [
     {
-        title: "CSE",
-        description: "Explore How To Talk With Machine",
+        title: "AI",
+        description: "Machine Is Like You? How? Lets Explore",
+        icon: "🤖",
+        link: "https://sudo-vpx.github.io/Basics_Of_Website/Study/CSE/"
+    },
+    {
+        title: "FCS",
+        description: "How It Started? Lets Explore",
         icon: "💻",
-        link: "https://ferrofy.github.io/Website/Study/CSE"
-    },
-    {
-        title: "Math",
-        description: "Lets Explore Universe By Understanding The Language of Universe",
-        icon: "♾️",
         link: null
     },
     {
-        title: "Physics",
+        title: "HTML",
         description: "No Day Dreaming , Just Math And Logic",
-        icon: "⚡",
+        icon: "🌐",
         link: null
     },
     {
-        title: "Biology - Comming Soon",
+        title: "CSS",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🎨",
         link: null
     },
     {
-        title: "Phycology - Comming Soon",
+        title: "JS",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Chemistry - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Economics - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Bussiness - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🧠",
         link: null
     }
 ];

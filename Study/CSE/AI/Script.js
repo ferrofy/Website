@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Blue.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Blue.png";
         updateThemeColor(isDark);
     });
 });
@@ -85,84 +85,13 @@ window.addEventListener("load", () => {
         intro.classList.add("fade-out");
         setTimeout(() => {
             intro.remove();
-        }, 1000);
-    }, 3500);
+        }, 3200);
+    }, 3200);
 });
 
 // ===========================================| Study |===========================================
 
-const subjects = [
-    {
-        title: "CSE",
-        description: "Explore How To Talk With Machine",
-        icon: "💻",
-        link: "https://ferrofy.github.io/Website/Study/CSE"
-    },
-    {
-        title: "Math",
-        description: "Lets Explore Universe By Understanding The Language of Universe",
-        icon: "♾️",
-        link: null
-    },
-    {
-        title: "Physics",
-        description: "No Day Dreaming , Just Math And Logic",
-        icon: "⚡",
-        link: null
-    },
-    {
-        title: "Biology - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Phycology - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Chemistry - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Economics - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    },
-    {
-        title: "Bussiness - Comming Soon",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
-        link: null
-    }
-];
-const section = document.getElementById('Study_Section');
 
-subjects.forEach(subject => {
-    const box = document.createElement('div');
-    box.className = 'Subject_Box';
-
-    box.innerHTML = `
-    <div class="Subject_Icon">${subject.icon}</div>
-    <h2>${subject.title}</h2>
-    <p>${subject.description}</p>
-  `;
-
-    if (subject.link) {
-        box.addEventListener('click', () => {
-            window.location.href = subject.link;
-        });
-    } else {
-        box.classList.add('disabled');
-    }
-
-    section.appendChild(box);
-});
 
 // ===========================================| Footer |===========================================
 
