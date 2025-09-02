@@ -111,33 +111,39 @@ const subjects = [
         link: null
     },
     {
+        title: "Books Summary",
+        description: "Your Best Friend Is Here",
+        icon: "📚",
+        link: null
+    },
+    {
         title: "Biology - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🧬",
         link: null
     },
     {
         title: "Phycology - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🧠",
         link: null
     },
     {
         title: "Chemistry - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🧪",
         link: null
     },
     {
         title: "Economics - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "💰",
         link: null
     },
     {
         title: "Bussiness - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
-        icon: "⏳",
+        icon: "🏢",
         link: null
     }
 ];

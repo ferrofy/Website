@@ -2,7 +2,7 @@
 
 /* ========== Variables ========== */
 :root {
-  --FerroFy_Theme: #00c3ff;
+  --FerroFy_Theme: #00ff6c;
   --Dark_BG: #222222;
   --Red_Cross_Color: #ff0000;
   --Animation_Time_Of_Theme: 0.6s;
@@ -95,6 +95,7 @@ body.dark-mode #Menu {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(3);
   }
@@ -265,213 +266,178 @@ header {
 
 /*===========================================| Study |===========================================*/
 
-/* ========== Body Styles ========== */
-
-body.dark-mode .Subject_Box {
-    background-color: var(--Dark_BG);
-    color: #fff;
+body.dark-mode .Sub_Topic {
+  background: rgba(0, 195, 255, 0.05);
+  border-left: 4px solid var(--FerroFy_Theme);
 }
 
-body.dark-mode .Subject_Box:hover {
-    background-color: var(--FerroFy_Theme);
-    color: var(--Dark_BG);
+body.dark-mode .Main_Topic {
+  color: var(--FerroFy_Theme);
 }
 
-body.dark-mode .Subject_Icon {
-    background-color: #fff;
-    color: var(--Dark_BG);
+.Main_Topic {
+  padding: 20px 25px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #e0af26;
 }
 
-/* ========== Study Section Full ========== */
-
-#Study_Section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 20px;
+.Sub_Topic {
+  margin: 15px 25px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  background: var(--FerroFy_Theme);
+  border-left: 4px solid var(--FerroFy_Theme);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* ========== Subject Box ========== */
-
-.Subject_Box {
-    background-color: #f2f2f2;
-    border: 2px solid var(--FerroFy_Theme);
-    padding: 30px 20px 20px;
-    border-radius: 10%;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(20, 13, 13, 0.05);
+.Sub_Topic:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 75px rgba(0, 195, 255, 0.25);
 }
 
-.Subject_Box:hover {
-    transform: translateY(-10px);
-    background-color: var(--FerroFy_Theme);
-    color: #fff;
+.Sub_Topic ul {
+  margin: 0;
+  padding: 10px 0px 10px 50px;
 }
 
-.Subject_Box h2 {
-    margin-top: 10px;
-    font-size: 30px;
+.Sub_Topic li {
+  margin-bottom: 8px;
 }
 
-.Subject_Box p {
-    font-size: 17px;
-    margin-top: 10px;
-}
-
-/* ========== Subject Box Icon ========== */
-
-.Subject_Icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 10px;
-    background-color: var(--FerroFy_Theme);
-    color: var(--Dark_BG);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-/* ========== Comming Soon Study Box ========== */
-
-.Subject_Box.disabled {
-    opacity: 0.2;
-    pointer-events: none;
-}
 
 /*===========================================| Footer |===========================================*/
 
 /* ========== Body ========== */
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
 }
 
 body.dark-mode footer {
-    background-color: var(--FerroFy_Theme);
-    color: var(--Dark_BG);
+  background-color: var(--FerroFy_Theme);
+  color: var(--Dark_BG);
 }
 
 body.dark-mode .Footer_Sub_Box h2,
 body.dark-mode .Footer_Sub_Box ul li a,
 body.dark-mode .Footer_Bottom {
-    color: var(--Dark_BG);
-    border-color: var(--Dark_BG);
+  color: var(--Dark_BG);
+  border-color: var(--Dark_BG);
 }
 
 body.dark-mode .Footer_Sub_Box ul li a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 body.dark-mode #Social_Links {
-  color: #006840;
+  color: #ff0037;
 }
 
-body.dark-mode .Contact_Me_Links{
-  color: #006840;
+body.dark-mode .Contact_Me_Links {
+  color: #ff0037;
 }
 
 /* ========== Footer ========== */
 
 footer {
-    background-color: var(--Dark_BG);
-    color: #fff;
-    padding: 40px 2vw 20px 2vw;
-    font-size: 17px;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: var(--Dark_BG);
+  color: #fff;
+  padding: 40px 2vw 20px 2vw;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .Footer_Full_Box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5vw;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5vw;
+  margin: auto;
 }
 
 /* ========== Footer Sub Boxes ========== */
 
 .Footer_Sub_Box {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
 }
 
 .Footer_Sub_Box h2 {
-    color: var(--FerroFy_Theme);
-    margin-bottom: 15px;
-    font-size: 25px;
-    border-bottom: 2px solid var(--FerroFy_Theme);
-    padding-bottom: 5px;
-    text-align: center;
+  color: var(--FerroFy_Theme);
+  margin-bottom: 15px;
+  font-size: 25px;
+  border-bottom: 2px solid var(--FerroFy_Theme);
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .Footer_Sub_Box ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
 }
 
 .Footer_Sub_Box ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .Footer_Sub_Box ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .Footer_Sub_Box ul li a:hover {
-    color: var(--FerroFy_Theme);
+  color: var(--FerroFy_Theme);
 }
 
 .Footer_Sub_Box p {
-    text-align: center;
+  text-align: center;
 }
 
 .Footer_Bottom {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #fff;
-    border-top: 1px solid #555;
-    padding-top: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #fff;
+  border-top: 1px solid #555;
+  padding-top: 10px;
 }
 
 #About_Us_Text {
-    overflow: auto;
-    height: 200px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  overflow: auto;
+  height: 200px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #About_Us_Text::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* ========== Footer Sub Boxes ========== */
 
 #Social_Links {
-    text-decoration: none;
-    color: #00ff08;
+  text-decoration: none;
+  color: #00ff08;
 }
 
 #Social_Links:hover {
-    text-decoration: none;
-    color: var(--FerroFy_Theme);
+  text-decoration: none;
+  color: var(--FerroFy_Theme);
 }
 
 /* ========== Mail Link ========== */
 
-.Contact_Me_Links{
+.Contact_Me_Links {
   color: #00ff08;
   text-decoration: none;
 }

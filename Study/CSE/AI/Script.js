@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Blue.png";
+        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Purple.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Blue.png";
+        logo.src = isDark ? "../../../Images/Logo_Dark.png" : "../../../Images/Logo_Purple.png";
         updateThemeColor(isDark);
     });
 });
