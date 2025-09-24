@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FerroFy Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="../Images/Yellow/Favicon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Toolbar -->
+    <div class="tools">
+      <div class="search-sort">
+        <input id="Input_Search" placeholder="Search Here...">
+        <button id="Button_Search">Search</button>
+      </div>
+      <div class="controls">
+        <div class="range-wrap">
+          <label>Max Price ₹<span id="Span_PriceVal">100</span></label>
+          <input id="Input_PriceRange" type="range" min="1" max="1000" value="500">
+        </div>
+        <button id="Button_OpenCart" class="cart-btn">🛒 Cart <span id="Cart_Badge" class="cart-badge">0</span></button>
+      </div>
+    </div>
+
+    <!-- Hostels Product Grids -->
+    <main>
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 AryaBhata Hostel</h2>
+        <section id="Grid_Arya" class="product-grid"></section>
+      </div>
+
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 Gargi Hostel</h2>
+        <section id="Grid_Gargi" class="product-grid"></section>
+      </div>
+
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 Kalpana Hostel</h2>
+        <section id="Grid_Kalpana" class="product-grid"></section>
+      </div>
+
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 Sarabhai Hostel</h2>
+        <section id="Grid_Sara" class="product-grid"></section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="Div_CartDrawer" class="drawer">
+    <div class="drawer-header">
+      <h3>Your Cart 🛒</h3>
+      <span id="Button_CloseCart" class="drawer-close">&times;</span>
+    </div>
+    <div id="Div_CartList" class="cart-list"></div>
+    <div id="Div_CartEmpty" class="empty">Your cart is empty</div>
+    <div class="totals">Total: <span id="Span_CartTotal">₹0</span></div>
+    <button id="Button_Checkout" class="checkout">Buy Now 🚀</button>
+  </div>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" src="" alt="product image">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <p id="modalPrice"></p>
+      <p id="modalStock" class="stock-info"></p>
+      <button id="addToCartBtn" class="modal-add-btn">Add to Cart 🛒</button>
+    </div>
+  </div>
+
+  <!-- Stylish Popup Container -->
+  <div id="popupContainer" class="popup-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

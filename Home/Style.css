@@ -1,335 +1,533 @@
 /* ========== Variables ========== */
+
 :root {
-    --FerroFy_Theme: #e0af26;
-    --Dark_BG: #222222;
-    --Red_Cross_Color: #ff0000;
-    --Animation_Time_Of_Theme: 0.6s;
+  --FerroFy_Theme: #e0af26;
+  --Dark_BG: #222222;
+  --Red_Cross_Color: #ff0000;
+  --All_Services_Gradent: #b3ff00, #b3ff00, #00ff55, #00fff2, #0084ff, #009dff, #ff00ff, #ff008c, #ff5e00, #ff5e00;
+  --Animation_Time_Of_Theme: 0.6s;
 }
 
 /* ========== Base Reset ========== */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* ========== Body Styles ========== */
+/* ========== Body Styles + Dark Mode ========== */
 
 body {
-    font-size: 2.5vw;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
 }
 
 body.dark-mode {
-    background-color: var(--Dark_BG);
-    color: #fff;
+  background-color: var(--Dark_BG);
+  color: #fff;
 }
 
 body.dark-mode header {
-    background-color: var(--FerroFy_Theme);
-    color: var(--Dark_BG);
+  background-color: var(--FerroFy_Theme);
+  color: var(--Dark_BG);
 }
 
 body.dark-mode .Header_Main_Text {
-    color: var(--Dark_BG);
+  color: var(--Dark_BG);
 }
 
 body.dark-mode #Menu_Button {
-    background-color: var(--Dark_BG);
-    color: var(--FerroFy_Theme);
+  background-color: var(--Dark_BG);
+  color: var(--FerroFy_Theme);
 }
 
 body.dark-mode #Menu_Button:hover {
-    background-color: var(--FerroFy_Theme);
-    color: #fff;
+  background-color: var(--FerroFy_Theme);
+  color: #fff;
 }
 
 body.dark-mode #Menu {
-    background-color: var(--Dark_BG);
+  background-color: var(--Dark_BG);
 }
 
-/* ========== Theme Toggle ========== */
-
-.Theme_Button {
-    position: absolute;
-    top: 10vh;
-    right: 10px;
-    width: clamp(30px, 10vw, 60px);
-    height: clamp(20px, 5vw, 30px);
-    z-index: 1000;
+body.dark-mode .All_Services_Box {
+  background: #161616;
 }
 
-.Theme_Button input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+body.dark-mode .Subtext_Services {
+  color: #fff;
 }
-
-.Theme_Slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    border-radius: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(7px, 1.5vw, 10px);
-    transition: var(--Animation_Time_Of_Theme);
-}
-
-.Theme_Slider:before {
-    content: " ";
-    position: absolute;
-    height: clamp(20px, 3vw, 30px);
-    width: clamp(20px, 3vw, 30px);
-    left: 4px;
-    background-color: var(--FerroFy_Theme);
-    border-radius: 50%;
-    transition: transform var(--Animation_Time_Of_Theme);
-}
-
-.Theme_Button input:checked+.Theme_Slider {
-    background-color: var(--Dark_BG);
-}
-
-.Theme_Button input:checked+.Theme_Slider:before {
-    transform: translateX(clamp(16px, 5vw, 26px));
-}
-
-/* ========== Header ========== */
-
-header {
-    position: relative;
-    background-color: var(--Dark_BG);
-    width: 100%;
-    height: 25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5vw;
-}
-
-/* ========== Logo ========== */
-
-.Logo {
-    position: absolute;
-    top: 50%;
-    left: 0.5vw;
-    transform: translateY(-50%);
-}
-
-.Logo #Logo {
-    width: min(20vh, 1000px);
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    transition: filter 0.3s;
-    color: #fff;
-}
-
-/* ========== Header Text ========== */
-
-.Header_Main_Text {
-    color: var(--FerroFy_Theme);
-    font-size: clamp(20px, 8vw, 10vh);
-    text-align: center;
-}
-
-/* ========== Menu ========== */
-
-#Menu_Button {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    background-color: var(--FerroFy_Theme);
-    color: #fff;
-    border: none;
-    padding: 0.6em 1.2em;
-    font-size: 2vh;
-    cursor: pointer;
-    border-radius: 6px;
-    z-index: 1001;
-}
-
-#Menu_Button:hover {
-    background-color: #fff;
-    color: var(--FerroFy_Theme);
-}
-
-#Menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--FerroFy_Theme);
-    color: #fff;
-    padding: 20px;
-    display: none;
-    z-index: 10000;
-    overflow-y: auto;
-}
-
-#Menu_Close_Button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: red;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-    font-size: clamp(30px, 7.5vw, 50px);
-    cursor: pointer;
-}
-
-#Menu_Close_Button:hover {
-    background-color: #fff;
-    color: var(--Red_Cross_Color);
-}
-
-#Menu_Items {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 40px;
-    font-size: 25px;
-}
-
-#Menu_Items li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-#Menu_Items a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* ========== Responsive Fixes ========== */
-
-@media (max-width: 600px) {
-    .Header_Main_Text {
-        font-size: 8.5vw;
-    }
-
-    .Logo #Logo {
-        width: min(20vw, 750px);
-        height: auto;
-        aspect-ratio: 1 / 1;
-        object-fit: contain;
-        transition: filter 0.3s;
-    }
-}
-
-
-/* ==================================================| Footer |================================================== */
-
-/* ========== Body ========== */
 
 body.dark-mode footer {
-    background-color: var(--FerroFy_Theme);
-    color: var(--Dark_BG);
+  background-color: var(--FerroFy_Theme);
+  color: var(--Dark_BG);
 }
 
 body.dark-mode .Footer_Sub_Box h2,
 body.dark-mode .Footer_Sub_Box ul li a,
 body.dark-mode .Footer_Bottom {
-    color: var(--Dark_BG);
-    border-color: var(--Dark_BG);
+  color: var(--Dark_BG);
+  border-color: var(--Dark_BG);
 }
 
 body.dark-mode .Footer_Sub_Box ul li a:hover {
-    color: #fff;
+  color: #fff;
 }
 
-@media (max-width: 600px) {
-    .Footer_Full_Box {
-        flex-direction: column;
-        text-align: center;
-    }
+body.dark-mode #Social_Links {
+  color: #ffffff;
 }
+
+body.dark-mode #Social_Links:hover {
+  color: #000;
+}
+
+/* ==================================================| Header |================================================== */
+
+/* ========== Main Entrance In ========== */
+
+#Main_Entrance {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 1s ease-out;
+  cursor: none;
+}
+
+/* ========== Main Entrance Out ========== */
+
+#Main_Entrance.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ========== Main Entrance Logo ========== */
+
+#Intro_Logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: Zoom_In_Out_Animation 2s ease-in-out infinite alternate;
+}
+
+#Intro_Logo img {
+  height: 50vw;
+  width: 50vw;
+}
+
+/* ========== Main Entrance Animation ========== */
+
+@keyframes Zoom_In_Out_Animation {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ========== Theme Toggle ========== */
+
+.Theme_Button {
+  position: absolute;
+  top: 10vh;
+  right: 10px;
+  width: 60px;
+  height: 30px;
+  z-index: 1;
+}
+
+.Theme_Button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Theme_Slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  transition: var(--Animation_Time_Of_Theme);
+}
+
+.Theme_Slider:before {
+  content: " ";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 4px;
+  background-color: var(--FerroFy_Theme);
+  border-radius: 50%;
+  transition: transform var(--Animation_Time_Of_Theme);
+}
+
+.Theme_Button input:checked+.Theme_Slider {
+  background-color: var(--Dark_BG);
+}
+
+.Theme_Button input:checked+.Theme_Slider:before {
+  transform: translateX(26px);
+}
+
+/* ========== Header ========== */
+
+header {
+  position: relative;
+  background-color: var(--Dark_BG);
+  width: 100%;
+  height: 22.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5vw;
+}
+
+/* ========== Logo ========== */
+
+.Logo {
+  position: absolute;
+  top: 50%;
+  left: 0.5vw;
+  transform: translateY(-50%);
+}
+
+.Logo #Logo {
+  width: min(20vh, 1000px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  transition: filter 0.3s;
+  color: #fff;
+}
+
+/* ========== Header Text ========== */
+
+.Header_Main_Text {
+  color: var(--FerroFy_Theme);
+  font-size: 5vw;
+  font-weight: 750;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* ========== Menu ========== */
+
+#Menu_Button {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  background-color: var(--FerroFy_Theme);
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 3vh;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+#Menu_Button:hover {
+  background-color: #fff;
+  color: var(--FerroFy_Theme);
+}
+
+#Menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--FerroFy_Theme);
+  color: #fff;
+  padding: 20px;
+  display: none;
+  z-index: 3;
+  overflow-y: auto;
+}
+
+#Menu_Close_Button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--Red_Cross_Color);
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  padding: 1vw;
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+#Menu_Close_Button:hover {
+  background-color: #fff;
+  color: var(--Red_Cross_Color);
+}
+
+#Menu_Items {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+#Menu_Items li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#Menu_Items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ==================================================| Main |================================================== */
+
+.All_Services_Box {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+#Services_Heading {
+  margin: 8px 0 4px;
+  font-weight: 1000;
+  letter-spacing: -0.01em;
+  color: var(--FerroFy_Theme);
+  text-align: center;
+}
+
+.Subtext_Services {
+  margin: 0 0 16px;
+  color: #141414;
+  text-align: center;
+}
+
+.All_Buttons_Services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+}
+
+@media (min-width: 900px) {
+  .All_Buttons_Services {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .All_Buttons_Services {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gradient-btn {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 18px;
+  background: linear-gradient(90deg, var(--All_Services_Gradent));
+  background-size: 1500% 1500%;
+  color: #000000;
+  cursor: pointer;
+  transition: transform 240ms ease, filter 240ms ease;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.gradient-btn {
+  animation: gradientShift 9s ease-in-out infinite;
+  will-change: background-position;
+}
+
+.gradient-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 120% at 10% 10%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.06) 60%, transparent 100%);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+.gradient-btn:hover,
+.gradient-btn:focus-visible {
+  transform: translateY(-10px);
+  outline: none;
+}
+
+.gradient-btn:active {
+  transform: translateY(0);
+}
+
+.btn-content {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-title {
+  font-weight: 1000;
+}
+
+.btn-desc {
+  font-size: 1rem;
+  color: #000;
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-btn {
+    animation: none;
+    background-size: auto;
+  }
+}
+
+.coming-soon {
+  opacity: 0.75;
+  cursor: not-allowed;
+  filter: grayscale(0.6);
+  box-shadow: none;
+  animation: none;
+}
+
+.coming-soon .btn-title {
+  font-weight: 1000;
+  color: #3a3a3a;
+}
+
+.coming-soon .btn-desc {
+  color: #3a3a3a;
+  font-style: italic;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ==================================================| Footer |================================================== */
 
 /* ========== Footer ========== */
 
 footer {
-    background-color: var(--Dark_BG);
-    color: #fff;
-    padding: 40px 5vw 20px;
-    font-size: clamp(14px, 2vw, 18px);
-    transition: background-color 0.3s, color 0.3s;
+  background-color: var(--Dark_BG);
+  color: #fff;
+  padding: 40px 2vw 20px 2vw;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .Footer_Full_Box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3vw;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5vw;
+  margin: auto;
 }
 
 /* ========== Footer Sub Boxes ========== */
 
 .Footer_Sub_Box {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
 }
 
 .Footer_Sub_Box h2 {
-    color: var(--FerroFy_Theme);
-    margin-bottom: 15px;
-    font-size: clamp(18px, 2.5vw, 24px);
-    border-bottom: 2px solid var(--FerroFy_Theme);
-    padding-bottom: 5px;
-    text-align: center;
+  color: var(--FerroFy_Theme);
+  margin-bottom: 15px;
+  font-size: 25px;
+  border-bottom: 2px solid var(--FerroFy_Theme);
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .Footer_Sub_Box ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
 }
 
 .Footer_Sub_Box ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .Footer_Sub_Box ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .Footer_Sub_Box ul li a:hover {
-    color: var(--FerroFy_Theme);
+  color: var(--FerroFy_Theme);
 }
 
 .Footer_Sub_Box p {
-    text-align: center;
+  text-align: center;
 }
 
 .Footer_Bottom {
-    text-align: center;
-    margin-top: 30px;
-    font-size: clamp(12px, 1.5vw, 16px);
-    color: #fff;
-    border-top: 1px solid #555;
-    padding-top: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #fff;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+#About_Us_Text {
+  overflow: auto;
+  height: 200px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#About_Us_Text::-webkit-scrollbar {
+  display: none;
 }
 
 /* ========== Footer Sub Boxes ========== */
 
 #Social_Links {
-    text-decoration: none;
-    color: #00ff08;
+  text-decoration: none;
+  color: #00ff08;
+}
+
+#Social_Links:hover {
+  text-decoration: none;
+  color: var(--FerroFy_Theme);
 }

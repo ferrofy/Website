@@ -1,76 +1,132 @@
+/* ========== Variables ========== */
+
+:root{
+    --FerroFy_Theme:#e0af26;
+}
+
 /* ========== Body ========== */
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0a0a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
 }
 
 /* ========== Base Reset ========== */
 
-*{
-  padding: 0;
-  margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 /* ========== Full Page ========== */
 
 .Full_Page {
-  text-align: center;
+    text-align: center;
 }
 
 /* ========== Heading ========== */
 
 .Heading {
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #f1f1f1;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: var(--FerroFy_Theme);
+}
+
+/* ========== Social Sections ========== */
+
+.Social_Section {
+    margin-bottom: 75px;
+}
+
+/* ========== Sub Heading ========== */
+
+.Sub_Heading {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    color: #b3ff00;
 }
 
 /* ========== Social Icons ========== */
 
 .Social_Icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* ========== Icons ========== */
 
 .Icon {
-  font-size: 3rem;
-  color: #fff;
-  background: #1e1e1e;
-  padding: 18px;
-  border-radius: 50%;
-  transition: all 0.4s ease;
-  cursor: pointer;
+    font-size: 3rem;
+    color: #fff;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .Icon:hover {
-  transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 /* ========== Glow Effects ========== */
 
-.facebook:hover { color: #1877f2; box-shadow: 0 0 20px #1877f2, 0 0 40px #1877f2; }
-.twitter:hover { color: #1da1f2; box-shadow: 0 0 20px #1da1f2, 0 0 40px #1da1f2; }
-.instagram:hover { 
-  color: #fff; 
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  box-shadow: 0 0 25px #d6249f, 0 0 40px #fd5949;
+.facebook:hover {
+    color: #1877f2;
+    box-shadow: 0 0 20px #1877f2, 0 0 40px #1877f2;
 }
-.linkedin:hover { color: #0a66c2; box-shadow: 0 0 20px #0a66c2, 0 0 40px #0a66c2; }
-.github:hover { color: #fff; box-shadow: 0 0 20px #fff, 0 0 40px #888; }
-.email:hover { color: #ea4335; box-shadow: 0 0 20px #ea4335, 0 0 40px #ea4335; }
-.reddit:hover { color: #ff4500; box-shadow: 0 0 20px #ff4500, 0 0 40px #ff4500; }
-.discord:hover { color: #5865f2; box-shadow: 0 0 20px #5865f2, 0 0 40px #5865f2; }
-.telegram:hover { color: #229ED9; box-shadow: 0 0 20px #229ED9, 0 0 40px #229ED9; }
-.youtube:hover { color: #ff0000; box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000; }
+
+.twitter:hover {
+    color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2, 0 0 40px #1da1f2;
+}
+
+.instagram:hover {
+    color: #fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 0 25px #d6249f, 0 0 40px #fd5949;
+}
+
+.linkedin:hover {
+    color: #0a66c2;
+    box-shadow: 0 0 20px #0a66c2, 0 0 40px #0a66c2;
+}
+
+.github:hover {
+    color: #fff;
+    box-shadow: 0 0 20px #fff, 0 0 40px #888;
+}
+
+.email:hover {
+    color: #ea4335;
+    box-shadow: 0 0 20px #ea4335, 0 0 40px #ea4335;
+}
+
+.reddit:hover {
+    color: #ff4500;
+    box-shadow: 0 0 20px #ff4500, 0 0 40px #ff4500;
+}
+
+.discord:hover {
+    color: #5865f2;
+    box-shadow: 0 0 20px #5865f2, 0 0 40px #5865f2;
+}
+
+.telegram:hover {
+    color: #229ED9;
+    box-shadow: 0 0 20px #229ED9, 0 0 40px #229ED9;
+}
+
+.youtube:hover {
+    color: #ff0000;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+}

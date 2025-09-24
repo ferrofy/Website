@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../Images/Logo_Dark.png" : "../Images/Logo_Yellow.png";
+        logo.src = isDark ?  "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -144,6 +144,12 @@ const subjects = [
         title: "Bussiness - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "🏢",
+        link: null
+    },
+    {
+        title: "NCC - Comming Soon",
+        description: "Contact Our Team For a Particular Subject",
+        icon: "💪",
         link: null
     }
 ];
