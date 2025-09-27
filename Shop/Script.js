@@ -1,47 +1,194 @@
-const Product_List = [
-  {
-    name: "Laptop Sticker 1x {Limited Time}",
-    image: "../Images/Shop_Item/Laptop_Skin.jpeg",
-    price: 150,
-    description: "Cut and Stick",
-    stock: { AryaBhata: 1, Gargi: 0, Kalpana: 0, Sarabhai: 0 }
-  },
-  {
-    name: "Yippe - 4 Pack",
-    image: "../Images/Shop_Item/Yippe.jpeg",
-    price: 50,
-    description: "Instant noodles pack of 4.",
-    stock: { AryaBhata: 0, Gargi: 0, Kalpana: 0, Sarabhai: 0 }
-  },
-  {
-    name: "Coca Cola",
-    image: "../Images/Shop_Item/Coca_Cola.jpeg",
-    price: 45,
-    description: "Refreshing soft drink.",
-    stock: { AryaBhata: 0, Gargi: 0, Kalpana: 0, Sarabhai: 0 }
-  },
-  {
-    name: "Eggs",
-    image: "../Images/Shop_Item/Eggs.jpeg",
-    price: 7,
-    description: "Fresh eggs.",
-    stock: { AryaBhata: 32, Gargi: 0, Kalpana: 0, Sarabhai: 0 }
-  }
-];
+const Hostel_Products = {
+
+  // =======================================| AryaBhata |=======================================
+
+  AryaBhata: [
+    {
+      name: "Maggi",
+      image: "../Images/Shop_Item/Noodles/Packet/Maggi.jpg",
+      price: 11,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Yipee {4 Pack}",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      price: 50,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Maggi Masala",
+      image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
+      price: 7,
+      description: "Fresh eggs.",
+      stock: 9
+    },
+    {
+      name: "Laptop Sticker {Limited Time}",
+      image: "../Images/Shop_Item/Electronics/Laptop_Skins/Laptop_Skin.jpg",
+      price: 150,
+      description: "Cut and Stick",
+      stock: 1
+    },
+    {
+      name: "Eggs",
+      image: "../Images/Shop_Item/Eggs/Eggs.jpg",
+      price: 7,
+      description: "Fresh eggs.",
+      stock: 32
+    },
+    {
+      name: "Coca Cola",
+      image: "../Images//Shop_Item/Babreages/Coca_Cola.jpg",
+      price: 45,
+      description: "Refreshing soft drink.",
+      stock: 0
+    },
+    {
+      name: "Lays {Green} ",
+      image: "../Images/Shop_Item/Chips/Lays_Green.jpg",
+      price: 22,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Lays {Dark Green}",
+      image: "../Images/Shop_Item/Chips/Lays_Dark_Green.jpg",
+      price: 22,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Cup Noodles Italiano",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Italiano.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Cup Noodles Masala Mazedaar Masala",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Cup Noodles Spiced Chicken",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Spiced_Chicken.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Cup Noodles Viggie Manchow",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Viggie_Manchow.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Cup Noodles Masala Cuppa Noodles",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Masala_Cuppa_Noodles.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Pop Corn Chilli Surprise",
+      image: "../Images/Shop_Item/Popcorn/Chilli_Surprise.jpg",
+      price: 11,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Pop Corn Golden Sizzle",
+      image: "../Images/Shop_Item/Popcorn/Golden_Sizzle.jpg",
+      price: 11,
+      description: "Fresh eggs.",
+      stock: 0
+    },
+    {
+      name: "Tata Salt Immuno",
+      image: "../Images/Shop_Item/Other/Tata_Salt_Immuno.jpg",
+      price: 55,
+      description: "Fresh eggs.",
+      stock: 0
+    }
+
+    // =======================================| Gargi |=======================================
+
+  ],
+  Gargi: [
+    {
+      name: "Yippe - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      price: 50,
+      description: "Instant noodles pack of 4.",
+      stock: 0
+    }
+  ],
+
+  // =======================================| Kalpana |=======================================
+
+
+  Kalpana: [
+    {
+      name: "Yippe - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      price: 50,
+      description: "Instant noodles pack of 4.",
+      stock: 0
+    }
+  ],
+
+  // =======================================| SaraBhai |=======================================
+
+  Sarabhai: [
+    {
+      name: "Yippe - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      price: 50,
+      description: "Instant noodles pack of 4.",
+      stock: 0
+    }
+  ],
+
+  // =======================================| Chanakya |=======================================
+
+  Chanakya: [
+    {
+      name: "Yippe - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      price: 50,
+      description: "Instant noodles pack of 4.",
+      stock: 0
+    }
+  ]
+};
+
+
+
+
+
+
+
+
 
 const Hostel_Numbers = {
   AryaBhata: "7009095794",
   Gargi: "7009095794",
   Kalpana: "7009095794",
-  Sarabhai: "7009095794"
+  Sarabhai: "7009095794",
+  Chanakya: "7009095794"
 };
 
-// === DOM Elements ===
 const hostelContainers = {
   AryaBhata: document.getElementById("Grid_Arya"),
   Gargi: document.getElementById("Grid_Gargi"),
   Kalpana: document.getElementById("Grid_Kalpana"),
-  Sarabhai: document.getElementById("Grid_Sara")
+  Sarabhai: document.getElementById("Grid_Sara"),
+  Chanakya: document.getElementById("Grid_Chanakya")
 };
 
 const Button_OpenCart = document.getElementById("Button_OpenCart");
@@ -76,7 +223,6 @@ let Selected_Hostel = null;
 
 function showPopup(message, type = "success") {
   if (!Popup_Container) {
-    
     console[type === "error" ? "error" : "log"](message);
     return;
   }
@@ -94,13 +240,20 @@ function getCartTotal() {
 function getCartCount() {
   return Cart_Items.reduce((sum, i) => sum + i.qty, 0);
 }
-
-function getAvailableStock(product, hostel) {
-  const inCartQty = Cart_Items
-    .filter(c => c.name === product.name && c.hostel === hostel)
-    .reduce((a, c) => a + c.qty, 0);
-  return (product.stock[hostel] || 0) - inCartQty;
+function getTotalStock(productName, hostel) {
+  const hostelInventory = Hostel_Products[hostel] || [];
+  const product = hostelInventory.find(p => p.name === productName);
+  return product ? product.stock : 0;
 }
+
+function getAvailableStock(productName, hostel) {
+  const totalStock = getTotalStock(productName, hostel);
+  const inCartQty = Cart_Items
+    .filter(c => c.name === productName && c.hostel === hostel)
+    .reduce((a, c) => a + c.qty, 0);
+  return totalStock - inCartQty;
+}
+
 
 function Render_Products() {
   Object.keys(hostelContainers).forEach(hostel => {
@@ -108,7 +261,8 @@ function Render_Products() {
     if (!container) return;
     container.innerHTML = "";
 
-    const products = Product_List.filter(p =>
+    const hostelInventory = Hostel_Products[hostel] || [];
+    const products = hostelInventory.filter(p =>
       p.name.toLowerCase().includes(Current_Filter.search) &&
       p.price <= Current_Filter.maxPrice
     );
@@ -117,7 +271,7 @@ function Render_Products() {
       const div = document.createElement("div");
       div.className = "product";
 
-      const available = getAvailableStock(product, hostel);
+      const available = getAvailableStock(product.name, hostel);
       const stockClass = available > 0 ? "in-stock" : "out-of-stock";
       const stockText = available > 0 ? `In Stock: ${available}` : "Out of Stock";
 
@@ -131,7 +285,7 @@ function Render_Products() {
       if (available > 0) {
         div.addEventListener("click", () => Open_Modal(product, hostel));
       } else {
-        div.style.opacity = "0.5";
+        div.style.opacity = "0.15";
         div.style.cursor = "not-allowed";
       }
 
@@ -149,7 +303,7 @@ function Open_Modal(product, hostel) {
   Modal_Description.textContent = product.description;
   Modal_Price.textContent = `Price: ₹${product.price}`;
 
-  const available = getAvailableStock(product, hostel);
+  const available = getAvailableStock(product.name, hostel);
   if (available > 0) {
     Modal_Stock.textContent = `In Stock: ${available}`;
     Modal_Stock.className = "stock-info in-stock";
@@ -170,17 +324,16 @@ Div_ProductModal.addEventListener("click", e => {
   if (e.target === Div_ProductModal) Div_ProductModal.classList.remove("active");
 });
 
-// === Cart Logic ===
+
 Button_AddToCart.addEventListener("click", () => {
   if (!Selected_Product || !Selected_Hostel) return;
 
-  // Single-hostel constraint
   if (Cart_Items.length > 0 && Cart_Items[0].hostel !== Selected_Hostel) {
     showPopup("You can only buy from one hostel at a time!", "error");
     return;
   }
 
-  const available = getAvailableStock(Selected_Product, Selected_Hostel);
+  const available = getAvailableStock(Selected_Product.name, Selected_Hostel);
   if (available <= 0) {
     showPopup("This item is out of stock.", "error");
     return;
@@ -203,12 +356,14 @@ function Update_Cart() {
     Div_CartEmpty.style.display = "block";
     Span_CartTotal.textContent = "₹0";
     Cart_Badge.textContent = "0";
+    Button_Checkout.style.opacity = "0.6";
     return;
   }
 
   Div_CartEmpty.style.display = "none";
+  Button_Checkout.style.opacity = "1";
   Cart_Items.forEach(item => {
-    const available = getAvailableStock(item, item.hostel) + item.qty; // available including current item qty
+    const totalStock = getTotalStock(item.name, item.hostel);
     const div = document.createElement("div");
     div.className = "cart-item";
     div.innerHTML = `
@@ -229,14 +384,14 @@ function Update_Cart() {
     minusBtn.addEventListener("click", () => {
       item.qty--;
       if (item.qty <= 0) {
-        Cart_Items = Cart_Items.filter(c => !(c.name === item.name && c.hostel === item.hostel));
+        Cart_Items = Cart_Items.filter(c => c.name !== item.name || c.hostel !== item.hostel);
       }
       Update_Cart();
       Render_Products();
     });
 
     plusBtn.addEventListener("click", () => {
-      if (item.qty >= available) {
+      if (item.qty >= totalStock) {
         showPopup("Reached available stock limit.", "error");
         return;
       }
@@ -252,11 +407,9 @@ function Update_Cart() {
   Cart_Badge.textContent = getCartCount();
 }
 
-// === Drawer ===
 Button_OpenCart.addEventListener("click", () => Div_CartDrawer.classList.add("open"));
 Button_CloseCart.addEventListener("click", () => Div_CartDrawer.classList.remove("open"));
 
-// === Checkout ===
 Button_Checkout.addEventListener("click", () => {
   if (!Cart_Items.length) {
     showPopup("Cart is empty!", "error");
@@ -264,8 +417,9 @@ Button_Checkout.addEventListener("click", () => {
   }
   const hostel = Cart_Items[0].hostel;
   let msg = "Hey FerroFy Shop Our Order:\n\n";
-  Cart_Items.forEach(item => { msg += `${item.name} x ${item.qty}\n`; });
-  msg += "\nTotal: ₹" + getCartTotal() + "\n Your Name : [Name] \n Room No - [Your Room] \n Room Delivery : Yes / No ? \n \n Note: Room Delivery Cost Extra ₹5 \n \n If No Then We Will Provide Location Where To Pick Up Order";
+  Cart_Items.forEach(item => { msg += `• ${item.name} x ${item.qty}\n`; });
+  msg += "\n*Total: ₹" + getCartTotal() + "*\n\n_Please fill in your details:_\nName: \nRoom No: \nRoom Delivery (Yes/No): \n\n*Note:* Room Delivery costs an extra ₹5. If 'No', we will provide a pickup location.";
+
 
   const phone = Hostel_Numbers[hostel];
   if (!phone) {
@@ -277,28 +431,26 @@ Button_Checkout.addEventListener("click", () => {
   window.open(url, "_blank");
 });
 
-// === Filters ===
 Button_Search.addEventListener("click", () => {
   Current_Filter.search = Input_Search.value.trim().toLowerCase();
   Render_Products();
 });
 
-// Live search as you type
 Input_Search.addEventListener("input", () => {
   Current_Filter.search = Input_Search.value.trim().toLowerCase();
   Render_Products();
 });
 
 Input_PriceRange.addEventListener("input", () => {
-  Current_Filter.maxPrice = parseInt(Input_PriceRange.value, 10) || Current_Filter.maxPrice;
+  Current_Filter.maxPrice = parseInt(Input_PriceRange.value, 10);
   Span_PriceVal.textContent = Current_Filter.maxPrice;
   Render_Products();
 });
 
-// === Init ===
 (function init() {
-  // Ensure initial price label matches slider
-  Span_PriceVal.textContent = Input_PriceRange.value;
+  if (Input_PriceRange && Span_PriceVal) {
+    Span_PriceVal.textContent = Input_PriceRange.value;
+  }
   Render_Products();
   Update_Cart();
 })();

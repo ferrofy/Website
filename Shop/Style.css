@@ -7,8 +7,8 @@ body {
 }
 
 :root {
-  --accent1: #39ff14; /* Neon green */
-  --accent2: #ffff33; /* Yellow */
+  --accent1: #39ff14;
+  --accent2: #ffff33;
 }
 
 /* === Toolbar === */

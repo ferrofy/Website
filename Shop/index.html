@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,10 +8,10 @@
   <link rel="stylesheet" href="Style.css">
   <link rel="shortcut icon" href="../Images/Yellow/Favicon.png" type="image/x-icon">
 </head>
+
 <body>
   <div class="app">
 
-    <!-- Toolbar -->
     <div class="tools">
       <div class="search-sort">
         <input id="Input_Search" placeholder="Search Here...">
@@ -25,11 +26,20 @@
       </div>
     </div>
 
-    <!-- Hostels Product Grids -->
     <main>
       <div class="hostel-box">
         <h2 class="hostel-title">🏠 AryaBhata Hostel</h2>
         <section id="Grid_Arya" class="product-grid"></section>
+      </div>
+
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 Chanakya Hostel</h2>
+        <section id="Grid_Chanakya" class="product-grid"></section>
+      </div>
+
+      <div class="hostel-box">
+        <h2 class="hostel-title">🏠 Sarabhai Hostel</h2>
+        <section id="Grid_Sara" class="product-grid"></section>
       </div>
 
       <div class="hostel-box">
@@ -42,14 +52,9 @@
         <section id="Grid_Kalpana" class="product-grid"></section>
       </div>
 
-      <div class="hostel-box">
-        <h2 class="hostel-title">🏠 Sarabhai Hostel</h2>
-        <section id="Grid_Sara" class="product-grid"></section>
-      </div>
     </main>
   </div>
 
-  <!-- Cart Drawer -->
   <div id="Div_CartDrawer" class="drawer">
     <div class="drawer-header">
       <h3>Your Cart 🛒</h3>
@@ -61,7 +66,6 @@
     <button id="Button_Checkout" class="checkout">Buy Now 🚀</button>
   </div>
 
-  <!-- Product Modal -->
   <div id="productModal" class="modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
@@ -74,9 +78,9 @@
     </div>
   </div>
 
-  <!-- Stylish Popup Container -->
   <div id="popupContainer" class="popup-container"></div>
 
   <script src="Script.js"></script>
 </body>
+
 </html>
