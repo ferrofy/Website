@@ -1,119 +1,187 @@
 const Hostel_Products = {
 
+  // =======================================| NCC |=======================================
+
+  NCC: [
+    {
+      name: "Yippee - 1 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_1_Pack.jpg",
+      price: 11,
+      description: "Enjoy Your Noodles",
+      stock: 2
+    },
+    {
+      name: "Maggi - 1 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Maggi_1_Pack.jpg",
+      price: 11,
+      description: "Enjoy Your Noodles",
+      stock: 1
+    },
+    {
+      name: "Maggi Masala",
+      image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
+      price: 7,
+      description: "Can Be Used For Cooking",
+      stock: 4
+    },
+    {
+      name: "Cup Noodles Masala Mazedaar Masala",
+      image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
+      price: 58,
+      description: "Just Add Boil Water And Cook",
+      stock: 2
+    },
+    {
+      name: "Nescafe Small - 10 Pack",
+      image: "../Images/Shop_Item/Coffee/Small/Nescafe.jpg",
+      price: 23,
+      description: "Programmer Best Friend",
+      stock: 1
+    },
+    {
+      name: "Egg",
+      image: "../Images/Shop_Item/Eggs/Eggs.jpg",
+      price: 7.5,
+      description: "Fresh eggs.",
+      stock: 16
+    }
+  ],
+
   // =======================================| AryaBhata |=======================================
 
   AryaBhata: [
     {
-      name: "Maggi",
-      image: "../Images/Shop_Item/Noodles/Packet/Maggi.jpg",
-      price: 11,
-      description: "Fresh eggs.",
+      name: "Maggi - 1 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Maggi_1_Pack.jpg",
+      price: 12,
+      description: "Enjoy Your Noodles",
       stock: 0
     },
+    // {
+    //   name: "Maggi - 4 Pack",
+    //   image: "../Images/Shop_Item/Noodles/Packet/Maggi_4_Pack.jpg",
+    //   price: 66,
+    //   description: "Enjoy Your Noodles",
+    //   stock: 0
+    // },
     {
-      name: "Yipee {4 Pack}",
-      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      name: "Yippee - 1 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_1_Pack.jpg",
+      price: 12,
+      description: "Enjoy Your Noodles",
+      stock: 3
+    },
+    {
+      name: "Yippee - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_4_Pack.jpg",
       price: 50,
-      description: "Fresh eggs.",
+      description: "Enjoy Your Noodles",
       stock: 0
     },
     {
       name: "Maggi Masala",
       image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
       price: 7,
-      description: "Fresh eggs.",
-      stock: 9
+      description: "Can Be Used For Cooking",
+      stock: 4
     },
     {
-      name: "Laptop Sticker {Limited Time}",
+      name: "Laptop Sticker",
       image: "../Images/Shop_Item/Electronics/Laptop_Skins/Laptop_Skin.jpg",
       price: 150,
       description: "Cut and Stick",
       stock: 1
     },
     {
-      name: "Eggs",
+      name: "Egg",
       image: "../Images/Shop_Item/Eggs/Eggs.jpg",
-      price: 7,
-      description: "Fresh eggs.",
-      stock: 32
+      price: 8,
+      description: "Fresh eggs",
+      stock: 16
     },
-    {
-      name: "Coca Cola",
-      image: "../Images//Shop_Item/Babreages/Coca_Cola.jpg",
-      price: 45,
-      description: "Refreshing soft drink.",
-      stock: 0
-    },
-    {
-      name: "Lays {Green} ",
-      image: "../Images/Shop_Item/Chips/Lays_Green.jpg",
-      price: 22,
-      description: "Fresh eggs.",
-      stock: 0
-    },
-    {
-      name: "Lays {Dark Green}",
-      image: "../Images/Shop_Item/Chips/Lays_Dark_Green.jpg",
-      price: 22,
-      description: "Fresh eggs.",
-      stock: 0
-    },
+    // {
+    //   name: "Coca Cola",
+    //   image: "../Images//Shop_Item/Babreages/Coca_Cola.jpg",
+    //   price: 45,
+    //   description: "Refreshing soft drink",
+    //   stock: 0
+    // },
+    // {
+    //   name: "Lays {Green} ",
+    //   image: "../Images/Shop_Item/Chips/Lays_Green.jpg",
+    //   price: 22,
+    //   description: "Chips",
+    //   stock: 0
+    // },
+    // {
+    //   name: "Lays {Dark Green}",
+    //   image: "../Images/Shop_Item/Chips/Lays_Dark_Green.jpg",
+    //   price: 22,
+    //   description: "Chips",
+    //   stock: 0
+    // },
     {
       name: "Cup Noodles Italiano",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Italiano.jpg",
-      price: 55,
-      description: "Fresh eggs.",
+      price: 60,
+      description: "Enjoy Your Noodles",
       stock: 0
     },
     {
       name: "Cup Noodles Masala Mazedaar Masala",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
-      price: 55,
-      description: "Fresh eggs.",
-      stock: 0
+      price: 60,
+      description: "Enjoy Your Noodles",
+      stock: 3
     },
     {
       name: "Cup Noodles Spiced Chicken",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Spiced_Chicken.jpg",
-      price: 55,
-      description: "Fresh eggs.",
+      price: 60,
+      description: "Enjoy Your Noodles",
       stock: 0
     },
     {
       name: "Cup Noodles Viggie Manchow",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Viggie_Manchow.jpg",
-      price: 55,
-      description: "Fresh eggs.",
+      price: 60,
+      description: "Enjoy Your Noodles",
       stock: 0
     },
     {
       name: "Cup Noodles Masala Cuppa Noodles",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Masala_Cuppa_Noodles.jpg",
-      price: 55,
-      description: "Fresh eggs.",
+      price: 60,
+      description: "Enjoy Your Noodles",
       stock: 0
     },
     {
       name: "Pop Corn Chilli Surprise",
       image: "../Images/Shop_Item/Popcorn/Chilli_Surprise.jpg",
-      price: 11,
-      description: "Fresh eggs.",
+      price: 12,
+      description: "Pop And Eat Corn",
       stock: 0
     },
     {
       name: "Pop Corn Golden Sizzle",
       image: "../Images/Shop_Item/Popcorn/Golden_Sizzle.jpg",
-      price: 11,
-      description: "Fresh eggs.",
+      price: 12,
+      description: "Pop And Eat Corn",
       stock: 0
     },
     {
       name: "Tata Salt Immuno",
       image: "../Images/Shop_Item/Other/Tata_Salt_Immuno.jpg",
-      price: 55,
+      price: 33,
       description: "Fresh eggs.",
       stock: 0
+    },
+    {
+      name: "Tata Classic Salt",
+      image: "../Images/Shop_Item/Other/Tata_Classic_Salt.jpg",
+      price: 33,
+      description: "Fresh eggs.",
+      stock: 1
     }
 
     // =======================================| Gargi |=======================================
@@ -121,12 +189,12 @@ const Hostel_Products = {
   ],
   Gargi: [
     {
-      name: "Yippe - 4 Pack",
-      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      name: "Yippee - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_4_Pack.jpg",
       price: 50,
-      description: "Instant noodles pack of 4.",
+      description: "Enjoy Your Noodles",
       stock: 0
-    }
+    },
   ],
 
   // =======================================| Kalpana |=======================================
@@ -134,36 +202,36 @@ const Hostel_Products = {
 
   Kalpana: [
     {
-      name: "Yippe - 4 Pack",
-      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      name: "Yippee - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_4_Pack.jpg",
       price: 50,
-      description: "Instant noodles pack of 4.",
+      description: "Enjoy Your Noodles",
       stock: 0
-    }
+    },
   ],
 
   // =======================================| SaraBhai |=======================================
 
   Sarabhai: [
     {
-      name: "Yippe - 4 Pack",
-      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      name: "Yippee - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_4_Pack.jpg",
       price: 50,
-      description: "Instant noodles pack of 4.",
+      description: "Enjoy Your Noodles",
       stock: 0
-    }
+    },
   ],
 
   // =======================================| Chanakya |=======================================
 
   Chanakya: [
     {
-      name: "Yippe - 4 Pack",
-      image: "../Images/Shop_Item/Noodles/Packet/Yippe.jpg",
+      name: "Yippee - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Yippee_4_Pack.jpg",
       price: 50,
-      description: "Instant noodles pack of 4.",
+      description: "Enjoy Your Noodles",
       stock: 0
-    }
+    },
   ]
 };
 
@@ -171,11 +239,8 @@ const Hostel_Products = {
 
 
 
-
-
-
-
 const Hostel_Numbers = {
+  NCC: "7009095794",
   AryaBhata: "7009095794",
   Gargi: "7009095794",
   Kalpana: "7009095794",
@@ -184,6 +249,7 @@ const Hostel_Numbers = {
 };
 
 const hostelContainers = {
+  NCC: document.getElementById("Grid_NCC"),
   AryaBhata: document.getElementById("Grid_Arya"),
   Gargi: document.getElementById("Grid_Gargi"),
   Kalpana: document.getElementById("Grid_Kalpana"),
