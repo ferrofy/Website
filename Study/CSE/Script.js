@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ?  "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -92,65 +92,35 @@ window.addEventListener("load", () => {
 // ===========================================| Study |===========================================
 
 const subjects = [
-    
+
     {
-        title: "NCC",
-        description: "Unity And Discipline",
-        icon: "💪",
-        link: "https://ferrofy.github.io/Website/Study/NCC"
-    },
-    {
-        title: "CSE",
-        description: "Explore How To Talk With Machine",
-        icon: "💻",
-        link: "https://ferrofy.github.io/Website/Study/CSE"
-    },
-    {
-        title: "Math",
-        description: "Lets Explore Universe By Understanding The Language of Universe",
-        icon: "♾️",
+        title: "FCS",
+        description: "Computer science is no more about computers than astronomy is about telescopes",
+        icon: "⚙️",
         link: null
     },
     {
-        title: "Physics",
-        description: "No Day Dreaming , Just Math And Logic",
+        title: "Python",
+        description: "Simple is better than complex",
+        icon: "🐍",
+        link: null
+    },
+    {
+        title: "HTML",
+        description: "Skeleton of the web",
+        icon: "🏗️",
+        link: null
+    },
+    {
+        title: "CSS",
+        description: "Good design is obvious. Great design is transparent",
+        icon: "🎨",
+        link: null
+    },
+    {
+        title: "JS",
+        description: "Not More Logical Than Your Brain",
         icon: "⚡",
-        link: null
-    },
-    {
-        title: "Books Summary",
-        description: "Your Best Friend Is Here",
-        icon: "📚",
-        link: null
-    },
-    {
-        title: "Biology",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🧬",
-        link: null
-    },
-    {
-        title: "Phycology",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🧠",
-        link: null
-    },
-    {
-        title: "Chemistry",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🧪",
-        link: null
-    },
-    {
-        title: "Economics",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "💰",
-        link: null
-    },
-    {
-        title: "Bussiness",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🏢",
         link: null
     }
 ];

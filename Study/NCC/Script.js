@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ?  "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ?  "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -124,31 +124,31 @@ const subjects = [
         link: null
     },
     {
-        title: "Biology",
+        title: "Biology - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "🧬",
         link: null
     },
     {
-        title: "Phycology",
+        title: "Phycology - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "🧠",
         link: null
     },
     {
-        title: "Chemistry",
+        title: "Chemistry - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "🧪",
         link: null
     },
     {
-        title: "Economics",
+        title: "Economics - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "💰",
         link: null
     },
     {
-        title: "Bussiness",
+        title: "Bussiness - Comming Soon",
         description: "Contact Our Team For a Particular Subject",
         icon: "🏢",
         link: null

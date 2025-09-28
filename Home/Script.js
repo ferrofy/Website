@@ -78,13 +78,13 @@ window.addEventListener("load", () => {
 
 const services = {
     Study: {
-        title: "Study { Under Maintenance } ",
+        title: "Study",
         desc: "Get Latest Notes For A Particular Subject",
-        url: "#comming_Soon" //https://ferrofy.github.io/Website/Study
+        url: "https://ferrofy.github.io/Website/Study"
     },
     Shop: {
         title: "Shop",
-        desc: "Stuck In Collage ? Want Any Product ? Try To Reach Us",
+        desc: "Stuck In College ? Want Any Product ? Try To Reach Us",
         url: "https://ferrofy.github.io/Website/Shop"
     },
     Downloads: {
@@ -92,15 +92,20 @@ const services = {
         desc: "Want to Download All Data Of Website ? Come And Get All",
         url: "#comming_Soon" //https://ferrofy.github.io/Website/Downloads
     },
-    Contact_Us: {
-        title: "Contact Us",
-        desc: "Want to Reach Company ? Then Click Here",
-        url: "https://ferrofy.github.io/Website/Contact"
+    FerroFy_Crypto_Token: {
+        title: "FFy Crypto Token {Temporarily Unavailable} ",
+        desc: "Want Crypto Mutual Funds ? Come and Get Max Profit",
+        url: "#comming_Soon"
     },
     Decent_AI: {
         title: "Decentralised AI {Comming Soon} ",
         desc: "Who Controls This AI , Me , You , A comapany , Organization or Who ? Answer is No One",
         url: "#comming_Soon"
+    },
+    Contact_Us: {
+        title: "Contact Us",
+        desc: "Want to Reach Company ? Then Click Here",
+        url: "https://ferrofy.github.io/Website/Contact"
     }
 };
 
