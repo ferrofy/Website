@@ -79,18 +79,18 @@ const Hostel_Products = {
       stock: 0
     },
     {
+      name: "Nescafe Small - 10 Pack",
+      image: "../Images/Shop_Item/Coffee/Small/Nescafe.jpg",
+      price: 25,
+      description: "Programmer Best Friend",
+      stock: 1
+    },
+    {
       name: "Maggi Masala",
       image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
       price: 7,
       description: "Can Be Used For Cooking",
       stock: 4
-    },
-    {
-      name: "Laptop Sticker",
-      image: "../Images/Shop_Item/Electronics/Laptop_Skins/Laptop_Skin.jpg",
-      price: 150,
-      description: "Cut and Stick",
-      stock: 1
     },
     {
       name: "Egg",
@@ -182,11 +182,19 @@ const Hostel_Products = {
       price: 33,
       description: "Fresh eggs.",
       stock: 1
+    },
+    {
+      name: "Laptop Sticker",
+      image: "../Images/Shop_Item/Electronics/Laptop_Skins/Laptop_Skin.jpg",
+      price: 150,
+      description: "Cut and Stick",
+      stock: 1
     }
 
-    // =======================================| Gargi |=======================================
-
   ],
+
+  // =======================================| Gargi |=======================================
+
   Gargi: [
     {
       name: "Yippee - 4 Pack",
@@ -198,7 +206,6 @@ const Hostel_Products = {
   ],
 
   // =======================================| Kalpana |=======================================
-
 
   Kalpana: [
     {
@@ -242,10 +249,10 @@ const Hostel_Products = {
 const Hostel_Numbers = {
   NCC: "7009095794",
   AryaBhata: "7009095794",
-  Gargi: "7009095794",
-  Kalpana: "7009095794",
-  Sarabhai: "7009095794",
-  Chanakya: "7009095794"
+  Gargi: " ",
+  Kalpana: " ",
+  Sarabhai: " ",
+  Chanakya: " "
 };
 
 const hostelContainers = {
