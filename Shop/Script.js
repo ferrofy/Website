@@ -8,14 +8,14 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Noodles/Packet/Yippee_1_Pack.jpg",
       price: 11,
       description: "Enjoy Your Noodles",
-      stock: 2
+      stock: 0
     },
     {
       name: "Maggi - 1 Pack",
       image: "../Images/Shop_Item/Noodles/Packet/Maggi_1_Pack.jpg",
       price: 11,
       description: "Enjoy Your Noodles",
-      stock: 1
+      stock: 0
     },
     {
       name: "Maggi Masala",
@@ -29,7 +29,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
       price: 58,
       description: "Just Add Boil Water And Cook",
-      stock: 2
+      stock: 1
     },
     {
       name: "Nescafe Small - 10 Pack",
@@ -69,7 +69,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Noodles/Packet/Yippee_1_Pack.jpg",
       price: 12,
       description: "Enjoy Your Noodles",
-      stock: 3
+      stock: 0
     },
     {
       name: "Yippee - 4 Pack",
@@ -83,7 +83,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Coffee/Small/Nescafe.jpg",
       price: 25,
       description: "Programmer Best Friend",
-      stock: 1
+      stock: 0
     },
     {
       name: "Maggi Masala",
@@ -132,7 +132,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
       price: 60,
       description: "Enjoy Your Noodles",
-      stock: 3
+      stock: 1
     },
     {
       name: "Cup Noodles Spiced Chicken",
