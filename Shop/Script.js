@@ -22,14 +22,14 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
       price: 7,
       description: "Can Be Used For Cooking",
-      stock: 4
+      stock: 1
     },
     {
       name: "Cup Noodles Masala Mazedaar Masala",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
       price: 58,
       description: "Just Add Boil Water And Cook",
-      stock: 1
+      stock: 0
     },
     {
       name: "Nescafe Small - 10 Pack",
@@ -132,7 +132,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Mazedaar_Masala.jpg",
       price: 60,
       description: "Enjoy Your Noodles",
-      stock: 1
+      stock: 0
     },
     {
       name: "Cup Noodles Spiced Chicken",
