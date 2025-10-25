@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // ========== Navigation Links ==========
 
     const links = [
-        { text: "Home ❌", href: "#home" },
-        { text: "Shop ❌", href: "#shop" },
-        { text: "All Services ❌", href: "#all_services" },
-        { text: "Study", href: "../Study" },
-        { text: "About ❌", href: "#about" },
-        { text: "Contact", href: "../Contact" }
+        // { text: "Home", href: "#home" }, Current Page
+        { text: "Shop", href: "https://ferrofy.github.io/Website/Shop" },
+        { text: "Study", href: "https://ferrofy.github.io/Website/Study" },
+        { text: "Downloads", href: "https://ferrofy.github.io/Website/Downloads" },
+        // { text: "About", href: "#about" }, Add Later
+        { text: "Contact", href: "https://ferrofy.github.io/Website/Contact" }
     ];
 
     links.forEach(link => {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Study/NCC/India_Flag.jpg" : "../../Images/Study/NCC/India_Flag.jpg";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ?  "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Study/NCC/India_Flag.jpg" : "../../Images/Study/NCC/India_Flag.jpg";
         updateThemeColor(isDark);
     });
 });
@@ -92,7 +92,7 @@ window.addEventListener("load", () => {
 // ===========================================| Study |===========================================
 
 const subjects = [
-    
+
     {
         title: "NCC",
         description: "Unity And Discipline",
@@ -182,12 +182,12 @@ subjects.forEach(subject => {
 // ========== Quick Links Data ==========
 
 const quickLinksData = [
-    { name: "Home ❌", href: "#home" },
-    { name: "Shop ❌", href: "#shop" },
-    { name: "All Services ❌", href: "#all_services" },
-    { name: "Study", href: "../Study" },
-    { name: "About ❌", href: "#about" },
-    { name: "Contact", href: "../Contact" }
+    // { name: "Home", href: "#home" }, Current Page
+    { name: "Shop", href: "https://ferrofy.github.io/Website/Shop" },
+    { name: "Study", href: "https://ferrofy.github.io/Website/Study" },
+    { name: "Downloads", href: "https://ferrofy.github.io/Website/Downloads" },
+    // { name: "About", href: "#about" }, Add Later
+    { name: "Contact", href: "https://ferrofy.github.io/Website/Contact" }
 ];
 
 // ========== Quick Links JS ==========

@@ -88,9 +88,9 @@ const services = {
         url: "https://ferrofy.github.io/Website/Shop"
     },
     Downloads: {
-        title: "Downloads { Under Maintenance }",
+        title: "Downloads",
         desc: "Want to Download All Data Of Website ? Come And Get All",
-        url: "#comming_Soon" //https://ferrofy.github.io/Website/Downloads
+        url: "https://ferrofy.github.io/Website/Downloads"
     },
     FerroFy_Crypto_Token: {
         title: "FFy Crypto Token {Temporarily Unavailable} ",

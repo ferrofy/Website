@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -94,63 +94,27 @@ window.addEventListener("load", () => {
 const subjects = [
 
     {
-        title: "NCC",
-        description: "Unity And Discipline",
-        icon: "💪",
-        link: "https://ferrofy.github.io/Website/Study/NCC"
-    },
-    {
-        title: "CSE",
-        description: "Explore How To Talk With Machine",
-        icon: "💻",
-        link: "https://ferrofy.github.io/Website/Study/CSE"
-    },
-    {
-        title: "Books Summary",
-        description: "Your Best Friend Is Here",
-        icon: "📚",
-        link: "https://ferrofy.github.io/Website/Study/Books_Summary"
-    },
-    {
-        title: "Math",
-        description: "Lets Explore Universe By Understanding The Language of Universe",
-        icon: "♾️",
-        link: "https://ferrofy.github.io/Website/Study/Math"
-    },
-    {
-        title: "Phycology",
-        description: "Human Mind | Animal Mind | In Future Alien Mind ",
-        icon: "🧠",
-        link: "https://ferrofy.github.io/Website/Study/Phycology"
-    },
-    {
-        title: "Physics",
-        description: "No Day Dreaming , Just Math And Logic",
-        icon: "⚡",
+        title: "Matrix",
+        description: "Comming Soon W8 n Watch",
+        icon: "⚙️",
         link: null
     },
     {
-        title: "Biology",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🧬",
+        title: "Determinants",
+        description: "Comming Soon W8 n Watch",
+        icon: "⚙️",
         link: null
     },
     {
-        title: "Chemistry",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🧪",
+        title: "Differentiation",
+        description: "Comming Soon W8 n Watch",
+        icon: "⚙️",
         link: null
     },
     {
-        title: "Economics",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "💰",
-        link: null
-    },
-    {
-        title: "Bussiness",
-        description: "Contact Our Team For a Particular Subject",
-        icon: "🏢",
+        title: "Intigration",
+        description: "Comming Soon W8 n Watch",
+        icon: "⚙️",
         link: null
     }
 ];

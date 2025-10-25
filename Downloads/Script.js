@@ -10,9 +10,24 @@ const categoryData = [
         description: "Data Will Be Uploaded Soon"
     },
     {
-        category: "Website All Images",
+        category: "All Website Images",
         link: "https://ferrofy.github.io/Website/Downloads/Download_Files/Shop",
         description: "Uploaded All Latest Images"
+    },
+    {
+        category: "All Website Files",
+        link:  "https://github.com/ferrofy/Website/archive/refs/heads/main.zip",
+        description: "Get All File Of This Website"
+    },
+    {
+        category: "Softwares",
+        link: "https://ferrofy.github.io/Website/Downloads/Download_Files/Softwares",
+        description: "Get All The Softwares Made By Team FerroFy With Love"
+    },
+    {
+        category: "Website Made",
+        link: "https://ferrofy.github.io/Website/Downloads/Download_Files/Website_Made",
+        description: "Get Whole Data Of Website Made By Team FerroFy With Love"
     }
 ];
 
@@ -34,5 +49,4 @@ function renderCategories() {
     });
 }
 
-// 🚀 Run on load
 renderCategories();

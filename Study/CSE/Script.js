@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // ========== Navigation Links ==========
 
     const links = [
-        { text: "Home ❌", href: "#home" },
-        { text: "Shop ❌", href: "#shop" },
-        { text: "All Services ❌", href: "#all_services" },
-        { text: "Study", href: "../Study" },
-        { text: "About ❌", href: "#about" },
-        { text: "Contact", href: "../Contact" }
+        // { text: "Home", href: "#home" }, Current Page
+        { text: "Shop", href: "https://ferrofy.github.io/Website/Shop" },
+        { text: "Study", href: "https://ferrofy.github.io/Website/Study" },
+        { text: "Downloads", href: "https://ferrofy.github.io/Website/Downloads" },
+        // { text: "About", href: "#about" }, Add Later
+        { text: "Contact", href: "https://ferrofy.github.io/Website/Contact" }
     ];
 
     links.forEach(link => {
@@ -97,31 +97,31 @@ const subjects = [
         title: "FCS",
         description: "Computer science is no more about computers than astronomy is about telescopes",
         icon: "⚙️",
-        link: null
+        link: "https://ferrofy.github.io/Website/Study/CSE/FCS"
     },
     {
         title: "Python",
-        description: "Simple is better than complex",
+        description: "Simplicity is better than Complexity",
         icon: "🐍",
-        link: null
+        link: "https://ferrofy.github.io/Website/Study/CSE/Python"
     },
     {
         title: "HTML",
         description: "Skeleton of the web",
         icon: "🏗️",
-        link: null
+        link: "https://ferrofy.github.io/Website/Study/CSE/HTML"
     },
     {
         title: "CSS",
         description: "Good design is obvious. Great design is transparent",
         icon: "🎨",
-        link: null
+        link: "https://ferrofy.github.io/Website/Study/CSE/CSS"
     },
     {
         title: "JS",
         description: "Not More Logical Than Your Brain",
         icon: "⚡",
-        link: null
+        link: "https://ferrofy.github.io/Website/Study/CSE/JS"
     }
 ];
 const section = document.getElementById('Study_Section');
@@ -152,12 +152,12 @@ subjects.forEach(subject => {
 // ========== Quick Links Data ==========
 
 const quickLinksData = [
-    { name: "Home ❌", href: "#home" },
-    { name: "Shop ❌", href: "#shop" },
-    { name: "All Services ❌", href: "#all_services" },
-    { name: "Study", href: "../Study" },
-    { name: "About ❌", href: "#about" },
-    { name: "Contact", href: "../Contact" }
+    // { name: "Home", href: "#home" }, Current Page
+    { name: "Shop", href: "https://ferrofy.github.io/Website/Shop" },
+    { name: "Study", href: "https://ferrofy.github.io/Website/Study" },
+    { name: "Downloads", href: "https://ferrofy.github.io/Website/Downloads" },
+    // { name: "About", href: "#about" }, Add Later
+    { name: "Contact", href: "https://ferrofy.github.io/Website/Contact" }
 ];
 
 // ========== Quick Links JS ==========

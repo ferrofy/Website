@@ -1,10 +1,24 @@
 const downloadData = [
-    // {
-    //     category: "Main",
-    //     files: [
-    //         { name: "Item Sold Data", type: "Python", path: "ferrofy.github.io/Website/Downloads/Download_Files/Shop/File/Item_Sold.py" }
-    //     ]
-    // }
+    {
+        category: "Arduino",
+        files: [
+            { name: "RGB Lights", type: "Raw File", path: "https://github.com/ferrofy/Softwares/tree/36dca9576fa5836723c81146b1ff259d0070197a/Arduino/RGB_Lights" },
+            { name: "BT Car", type: "Raw File", path: "https://github.com/ferrofy/Softwares/tree/36dca9576fa5836723c81146b1ff259d0070197a/Arduino/BT_Car" }
+            
+        ],
+    },
+    {
+        category: "Excel Related",
+        files: [
+            { name: "Excel Search", type: "Raw File", path: "https://github.com/ferrofy/Softwares/tree/36dca9576fa5836723c81146b1ff259d0070197a/Excel_Search" }
+        ]
+    },
+    {
+        category: "Spammer",
+        files: [
+            { name: "Spammer", type: "Raw File", path: "https://github.com/ferrofy/Softwares/tree/36dca9576fa5836723c81146b1ff259d0070197a/Spammer" }
+        ]
+    }
 ];
 
 // 🛠️ Render Function

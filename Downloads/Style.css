@@ -29,13 +29,14 @@ main.downloads {
   flex: 1;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
   gap: 20px;
+  text-align: center;
 }
 
 .category-card {
   background: #1e232b;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   text-decoration: none;
   color: #e6edf3;
@@ -44,12 +45,13 @@ main.downloads {
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-25px);
   background: #2d333b;
 }
 
 .category-card h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #e0af26;
 }
 
 .sub-list {

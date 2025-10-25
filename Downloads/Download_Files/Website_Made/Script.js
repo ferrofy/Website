@@ -1,10 +1,10 @@
 const downloadData = [
-    // {
-    //     category: "Main",
-    //     files: [
-    //         { name: "Item Sold Data", type: "Python", path: "ferrofy.github.io/Website/Downloads/Download_Files/Shop/File/Item_Sold.py" }
-    //     ]
-    // }
+    {
+        category: "Defence Related",
+        files: [
+            { name: "Surya Defence Academy", type: "Whole Website", path: "https://github.com/ferrofy/Website_Made/archive/refs/heads/main.zip" }
+        ]
+    }
 ];
 
 // 🛠️ Render Function

@@ -22,7 +22,7 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
       price: 7,
       description: "Can Be Used For Cooking",
-      stock: 1
+      stock: 0
     },
     {
       name: "Cup Noodles Masala Mazedaar Masala",
@@ -36,14 +36,14 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Coffee/Small/Nescafe.jpg",
       price: 23,
       description: "Programmer Best Friend",
-      stock: 1
+      stock: 0
     },
     {
       name: "Egg",
       image: "../Images/Shop_Item/Eggs/Eggs.jpg",
       price: 7.5,
       description: "Fresh eggs.",
-      stock: 16
+      stock: 0
     }
   ],
 
@@ -57,13 +57,13 @@ const Hostel_Products = {
       description: "Enjoy Your Noodles",
       stock: 0
     },
-    // {
-    //   name: "Maggi - 4 Pack",
-    //   image: "../Images/Shop_Item/Noodles/Packet/Maggi_4_Pack.jpg",
-    //   price: 66,
-    //   description: "Enjoy Your Noodles",
-    //   stock: 0
-    // },
+    {
+      name: "Maggi - 4 Pack",
+      image: "../Images/Shop_Item/Noodles/Packet/Maggi_4_Pack.jpg",
+      price: 66,
+      description: "Enjoy Your Noodles",
+      stock: 0
+    },
     {
       name: "Yippee - 1 Pack",
       image: "../Images/Shop_Item/Noodles/Packet/Yippee_1_Pack.jpg",
@@ -90,36 +90,36 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Other/Maggi_Masala.jpg",
       price: 7,
       description: "Can Be Used For Cooking",
-      stock: 4
+      stock: 0
     },
     {
       name: "Egg",
       image: "../Images/Shop_Item/Eggs/Eggs.jpg",
       price: 8,
       description: "Fresh eggs",
-      stock: 16
+      stock: 0
     },
-    // {
-    //   name: "Coca Cola",
-    //   image: "../Images//Shop_Item/Babreages/Coca_Cola.jpg",
-    //   price: 45,
-    //   description: "Refreshing soft drink",
-    //   stock: 0
-    // },
-    // {
-    //   name: "Lays {Green} ",
-    //   image: "../Images/Shop_Item/Chips/Lays_Green.jpg",
-    //   price: 22,
-    //   description: "Chips",
-    //   stock: 0
-    // },
-    // {
-    //   name: "Lays {Dark Green}",
-    //   image: "../Images/Shop_Item/Chips/Lays_Dark_Green.jpg",
-    //   price: 22,
-    //   description: "Chips",
-    //   stock: 0
-    // },
+    {
+      name: "Coca Cola",
+      image: "../Images//Shop_Item/Babreages/Coca_Cola.jpg",
+      price: 45,
+      description: "Refreshing soft drink",
+      stock: 0
+    },
+    {
+      name: "Lays {Green} ",
+      image: "../Images/Shop_Item/Chips/Lays_Green.jpg",
+      price: 22,
+      description: "Chips",
+      stock: 0
+    },
+    {
+      name: "Lays {Dark Green}",
+      image: "../Images/Shop_Item/Chips/Lays_Dark_Green.jpg",
+      price: 22,
+      description: "Chips",
+      stock: 0
+    },
     {
       name: "Cup Noodles Italiano",
       image: "../Images/Shop_Item/Noodles/Cup_Noodles/Italiano.jpg",
@@ -181,14 +181,14 @@ const Hostel_Products = {
       image: "../Images/Shop_Item/Other/Tata_Classic_Salt.jpg",
       price: 33,
       description: "Fresh eggs.",
-      stock: 1
+      stock: 0
     },
     {
       name: "Laptop Sticker",
       image: "../Images/Shop_Item/Electronics/Laptop_Skins/Laptop_Skin.jpg",
       price: 150,
       description: "Cut and Stick",
-      stock: 1
+      stock: 0
     }
 
   ],
