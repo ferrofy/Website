@@ -92,25 +92,102 @@ window.addEventListener("load", () => {
 // ===========================================| Study |===========================================
 
 const subjects = [
-
+    {
+        title: "How To Download Python?",
+        description: "Your Machine Installing New Feelings",
+        icon: "https://raw.githubusercontent.com/ferrofy/Website/main/Images/Study/CSE/Download_Logo.jpg",
+        link: "https://ferrofy.github.io/Website/Study/CSE/Python/Download"
+    },
     {
         title: "Basics",
-        description: "Just W8 n Watch",
-        icon: "⚙️",
+        description: "Starting Is Something Which Never End",
+        icon: "https://raw.githubusercontent.com/ferrofy/Website/main/Images/Study/CSE/Basics_Logo.jpg",
+        link: "https://ferrofy.github.io/Website/Study/CSE/Python/Basics"
+    },
+    {
+        title: "Input And Ouput",
+        description: "Hello World",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Variables And Data Types",
+        description: "Like Your Ex | Always Changes",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Operations",
+        description: "Not Like The Hospital One",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Strings And Escape Sequence Char",
+        description: "Comming Soon | Desc Not Decided",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Lists",
+        description: "Like Your Ex Have",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Tuples",
+        description: "Feeling Never Changes",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Dictionary",
+        description: "At Least Not A Book",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Sets",
+        description: "Math Never Die 0_0",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Conditional Statement",
+        description: "If You Like Her : She Rejects | else : Happy",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Loops",
+        description: "Rejection In Loop",
+        icon: " ",
+        link: null
+    },
+    {
+        title: "Functions",
+        description: "Not Math One :)",
+        icon: " ",
         link: null
     }
 ];
+
 const section = document.getElementById('Study_Section');
 
 subjects.forEach(subject => {
     const box = document.createElement('div');
     box.className = 'Subject_Box';
 
+    // Detect if icon is a URL or emoji/text
+    const iconHTML = subject.icon.startsWith("http")
+        ? `<img src="${subject.icon}" alt="${subject.title}" class="Subject_Image">`
+        : subject.icon;
+
     box.innerHTML = `
-    <div class="Subject_Icon">${subject.icon}</div>
-    <h2>${subject.title}</h2>
-    <p>${subject.description}</p>
-  `;
+        <div class="Subject_Icon">${iconHTML}</div>
+        <h2>${subject.title}</h2>
+        <p>${subject.description}</p>
+    `;
 
     if (subject.link) {
         box.addEventListener('click', () => {

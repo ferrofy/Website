@@ -92,25 +92,30 @@ window.addEventListener("load", () => {
 // ===========================================| Study |===========================================
 
 const subjects = [
-
     {
-        title: "Basics",
-        description: "Just W8 n Watch",
+        title: "Comming Soon :)",
+        description: "W8 n Watch",
         icon: "⚙️",
         link: null
     }
 ];
+
 const section = document.getElementById('Study_Section');
 
 subjects.forEach(subject => {
     const box = document.createElement('div');
     box.className = 'Subject_Box';
 
+    // Detect if icon is a URL or emoji/text
+    const iconHTML = subject.icon.startsWith("http")
+        ? `<img src="${subject.icon}" alt="${subject.title}" class="Subject_Image">`
+        : subject.icon;
+
     box.innerHTML = `
-    <div class="Subject_Icon">${subject.icon}</div>
-    <h2>${subject.title}</h2>
-    <p>${subject.description}</p>
-  `;
+        <div class="Subject_Icon">${iconHTML}</div>
+        <h2>${subject.title}</h2>
+        <p>${subject.description}</p>
+    `;
 
     if (subject.link) {
         box.addEventListener('click', () => {
@@ -172,3 +177,4 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Little Error For Quick Links , Contact Team For This");
     }
 });
+

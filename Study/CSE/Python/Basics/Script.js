@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../../../Images/Dark/Logo.png" : "../../../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../../Images/Dark/Logo.png" : "../../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../../../Images/Dark/Logo.png" : "../../../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -87,40 +87,6 @@ window.addEventListener("load", () => {
             intro.remove();
         }, 1000);
     }, 3500);
-});
-
-// ===========================================| Study |===========================================
-
-const subjects = [
-
-    {
-        title: "Comming Soon :)",
-        description: "W8 n Watch",
-        icon: "⚙️",
-        link: null
-    }
-];
-const section = document.getElementById('Study_Section');
-
-subjects.forEach(subject => {
-    const box = document.createElement('div');
-    box.className = 'Subject_Box';
-
-    box.innerHTML = `
-    <div class="Subject_Icon">${subject.icon}</div>
-    <h2>${subject.title}</h2>
-    <p>${subject.description}</p>
-  `;
-
-    if (subject.link) {
-        box.addEventListener('click', () => {
-            window.location.href = subject.link;
-        });
-    } else {
-        box.classList.add('disabled');
-    }
-
-    section.appendChild(box);
 });
 
 // ===========================================| Footer |===========================================

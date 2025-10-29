@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         document.body.classList.toggle("dark-mode", isDark);
         toggle.checked = isDark;
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../../Images/Dark/Logo.png" : "../../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     }
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         const isDark = toggle.checked;
         document.body.classList.toggle("dark-mode", isDark);
-        logo.src = isDark ? "../Images/Dark/Logo.png" : "../Images/Yellow/Logo.png";
+        logo.src = isDark ? "../../../Images/Dark/Logo.png" : "../../../Images/Yellow/Logo.png";
         updateThemeColor(isDark);
     });
 });
@@ -92,7 +92,6 @@ window.addEventListener("load", () => {
 // ===========================================| Study |===========================================
 
 const subjects = [
-
     {
         title: "NCC",
         description: "Unity And Discipline",
@@ -104,12 +103,6 @@ const subjects = [
         description: "Explore How To Talk With Machine",
         icon: "💻",
         link: "https://ferrofy.github.io/Website/Study/CSE"
-    },
-    {
-        title: "Books Summary",
-        description: "Your Best Friend Is Here",
-        icon: "📚",
-        link: "https://ferrofy.github.io/Website/Study/Books_Summary"
     },
     {
         title: "Math",
@@ -154,17 +147,23 @@ const subjects = [
         link: null
     }
 ];
+
 const section = document.getElementById('Study_Section');
 
 subjects.forEach(subject => {
     const box = document.createElement('div');
     box.className = 'Subject_Box';
 
+    // Detect if icon is a URL or emoji/text
+    const iconHTML = subject.icon.startsWith("http")
+        ? `<img src="${subject.icon}" alt="${subject.title}" class="Subject_Image">`
+        : subject.icon;
+
     box.innerHTML = `
-    <div class="Subject_Icon">${subject.icon}</div>
-    <h2>${subject.title}</h2>
-    <p>${subject.description}</p>
-  `;
+        <div class="Subject_Icon">${iconHTML}</div>
+        <h2>${subject.title}</h2>
+        <p>${subject.description}</p>
+    `;
 
     if (subject.link) {
         box.addEventListener('click', () => {
@@ -226,3 +225,4 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Little Error For Quick Links , Contact Team For This");
     }
 });
+
